@@ -1,0 +1,11 @@
+services:
+  bonita:
+    image: bonita:2025.2
+    container_name: bonita-test
+    ports:
+      - "8081:8080"
+    environment:
+      - BONITA_RUNTIME_ADMIN_USERNAME=tech_user
+      - BONITA_RUNTIME_ADMIN_PASSWORD=secret
+      - PLATFORM_LOGIN=platformAdmin
+      - PLATFORM_PASSWORD=platform
