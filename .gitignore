@@ -1,1 +1,4 @@
-*.bar
+target/
+*.log
+.env
+Thumbs.db
