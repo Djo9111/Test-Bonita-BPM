@@ -9,3 +9,10 @@ services:
       - BONITA_RUNTIME_ADMIN_PASSWORD=secret
       - PLATFORM_LOGIN=platformAdmin
       - PLATFORM_PASSWORD=platform
+
+  mailpit:
+    image: axllent/mailpit:latest
+    container_name: mailpit-test
+    ports:
+      - "8025:8025"
+      - "1025:1025"
